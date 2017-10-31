@@ -1,0 +1,142 @@
+header {
+    background: url(../img/Mercer-Feature.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.aboveNav {
+    display: block;
+}
+
+.aboveNav>* {
+    display: inline-block;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+    display: block;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.leMenu {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+nav>ul>li>a {
+    color: dimgrey;
+    display: block;
+    line-height: 56px;
+    padding: 0 24px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: open sans;
+    text-transform: uppercase;
+}
+
+nav>ul>li:hover {
+    background-color: rgb( 40, 44, 47);
+    padding: 0 10px;
+    border-radius: 2.5px;
+}
+
+nav>ul>li:hover>a {
+    color: rgb( 255, 255, 255);
+}
+
+nav>ul>li:hover>a>i {
+    color: #3fe61e;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.labelForMenu {
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    font-size: 2rem;
+    display: inline-block;
+    font-family: monospace;
+    margin-top: 10px;
+    float: left;
+    margin-left: 20px;
+    padding: 0 10px;
+    display: none;
+}
+
+.labelForMenu:hover {
+    background-color: rgb( 40, 44, 47);
+    border-radius: 2.5px;
+    color: #fff;
+}
+
+.labelForMenu i {
+    font-size: 2rem;
+    padding-right: 20px;
+}
+
+input[type=checkbox]:checked~.leMenu {
+    display: block;
+}
+
+body>div {
+    display: block;
+    background-color: antiquewhite;
+    height: 500px;
+    border: 1px solid black;
+}
+
+
+/* Marquee (Moving text)*/
+
+.marquee {
+    width: 55%;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    text-indent: 0;
+    animation: marquee 19s linear infinite;
+    font-family: monospace;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+
+.marquee span:hover {
+    animation-play-state: paused
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}

@@ -1,8 +1,10 @@
+/*
 header {
     background: url(../img/Mercer-Feature.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
 }
+*/
 
 .aboveNav {
     display: block;
@@ -22,6 +24,7 @@ nav {
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .leMenu {
@@ -99,12 +102,14 @@ input[type=checkbox]:checked~.leMenu {
     display: block;
 }
 
+/*
 body>div {
     display: block;
     background-color: antiquewhite;
     height: 500px;
     border: 1px solid black;
 }
+*/
 
 
 /* Marquee (Moving text)*/

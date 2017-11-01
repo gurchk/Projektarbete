@@ -1,0 +1,84 @@
+.container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+body {
+    background-color:black;
+}
+
+p,
+h1,
+h4 {
+    margin: 20px;
+}
+
+@media all and (max-width:992px){
+    .arrow-right{display:none;}
+    .arrow-left{display:none;}
+}
+.timeline {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    border-left: 4px solid red;
+    height: 100%;
+    z-index: -1;
+}
+
+.timeline-outside {
+    /*            position:relative;*/
+}
+
+.timeline-content {
+    top: 90px;
+    position: relative;
+    margin: 25px 55px;
+    background-color: white;
+}
+
+
+.arrow-right {
+    position: absolute;
+    top: 13%;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid white;
+}
+
+.arrow-left {
+    position: absolute;
+    top: 13%;
+    right: 100%;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid white;
+}
+/*
+
+.timeline-dotted {
+    position: absolute;
+    right: -26.5%;
+    top: 5%;
+    background-color: white;
+    border-radius: 50%;
+    border: 4px solid red;
+    width: 75px;
+    height: 75px;
+}
+*/
+
+.timehold-right .timeline-dotted {
+    left: -25.5%;
+    top: 0%;
+}
+
+.timeline-dotted > h6 {
+    margin-top: 25%;
+    text-align: center;
+}

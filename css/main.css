@@ -133,27 +133,95 @@ input[type=checkbox]:checked~.leMenu {
     }
 }
 
-.content {
-    background-color: beige;
-    height: 800px;
-    text-align: center;
-    margin-top: 77px;
+/* Footer */
+
+.aboveFooter {
+    background: url(../img/footer.png) center center no-repeat;
+    position: relative;
+    height: 150px;
 }
 
-
-/* Footer */
 footer {
     background-color: #292967;
     position: relative;
-    bottom: 0;
-    width: 100%;
 }
-footer::before {
-    content: url(../img/footer.png);
-    bottom: 200px;
-    width: 100%;
-    position: relative;
+
+footer>.flexWrapper {
+    display: flex;
+    padding: 50px 0;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-around;
 }
+
+footer .license a{
+    color: #6d6d6d;
+    text-decoration: none;
+    
+}
+
+
+footer .license a:hover{
+    color: #a0a0a0;
+    text-decoration: none;
+    
+}
+.flexWrapper>div:first-child {
+    text-align: center;
+    padding-top: 30px;
+}
+.flexWrapper img {
+    margin-bottom: 15px;
+}
+.flexWrapper>div:last-child {
+    text-align: center;
+}
+
+.flexWrapper span {
+    font-family: monospace;
+    font-size: 1.5rem;
+    color: #a0a0a0;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+
+.flexWrapper ul {
+    list-style-type: none;
+    font-family: monospace;
+    font-size: 1rem;
+    color: #6d6d6d;
+    text-align: left;
+}
+
+.hr-footer {
+    width: 70%;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+footer>div:last-child {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+footer>div:last-child>span {
+    font-family: monospace;
+    font-size: 1.5rem;
+    color: #a0a0a0;
+    padding: 0 10px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+footer>div:last-child>p {
+    font-family: monospace;
+    font-size: 0.9rem;
+    line-height: 30px;
+    color: #6d6d6d;
+}
+
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 940px) {
@@ -168,5 +236,18 @@ footer::before {
     }
     .labelForMenu {
         display: block;
+    }
+    .hr-footer {
+        width: 90%;
+    }
+    footer .flexWrapper {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    footer .flexWrapper * {
+        padding: 5px 0;
+    }
+    footer div:last-child {
+        width: 95%;
     }
 }

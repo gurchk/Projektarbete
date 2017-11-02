@@ -50,10 +50,10 @@ p
 
 .timeline {
     position: absolute;
-    top: 15%;
+    top: 13%;
     left: 50%;
     border-left: 4px solid red;
-    height: 75%;
+    height: 78%;
     z-index: -1;
 }
 

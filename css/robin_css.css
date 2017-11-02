@@ -83,3 +83,7 @@ h4,
     background-image: linear-gradient( to left,
     brown, #a58855);
 }
+/* COLOR above the footer */
+.aboveFooter {
+    background-color: #DAA520 !important;
+}

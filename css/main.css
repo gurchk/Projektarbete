@@ -139,6 +139,7 @@ input[type=checkbox]:checked~.leMenu {
     background: url(../img/footer.png) center center no-repeat;
     position: relative;
     height: 150px;
+    background-color: #F4F4F4;
 }
 
 footer {

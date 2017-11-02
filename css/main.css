@@ -7,21 +7,8 @@ body {
     margin: 0;
 }
 
-/*
-header {
-    background: url(../img/Mercer-Feature.jpg) no-repeat center center fixed;
-    background-size: cover;
-    height: 100vh;
-}
-*/
 
-.aboveNav {
-    display: block;
-}
-
-.aboveNav>* {
-    display: inline-block;
-}
+/* Menu / Navigation */
 
 nav {
     background-color: rgba(255, 255, 255, 0.85);
@@ -75,7 +62,6 @@ nav>ul>li:hover>a {
 nav>ul>li:hover>a>i {
     color: #3fe61e;
 }
-<<<<<<< HEAD
 
 input[type=checkbox] {
     display: none;
@@ -112,15 +98,6 @@ input[type=checkbox]:checked~.leMenu {
     display: block;
 }
 
-/*
-body>div {
-    display: block;
-    background-color: antiquewhite;
-    height: 500px;
-    border: 1px solid black;
-}
-*/
-
 
 /* Marquee (Moving text)*/
 
@@ -156,93 +133,29 @@ body>div {
     }
 }
 
+.content {
+    background-color: beige;
+    height: 800px;
+    text-align: center;
+    margin-top: 77px;
+}
 
+
+/* Footer */
+footer {
+    background-color: #292967;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+footer::before {
+    content: url(../img/footer.png);
+    bottom: 200px;
+    width: 100%;
+    position: relative;
+}
 /* MEDIA QUERIES */
 
-=======
-
-input[type=checkbox] {
-    display: none;
-}
-
-.labelForMenu {
-    cursor: pointer;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    font-size: 2rem;
-    display: inline-block;
-    font-family: monospace;
-    margin-top: 10px;
-    float: left;
-    margin-left: 20px;
-    padding: 0 10px;
-    display: none;
-}
-
-.labelForMenu:hover {
-    background-color: rgb( 40, 44, 47);
-    border-radius: 2.5px;
-    color: #fff;
-}
-
-.labelForMenu i {
-    font-size: 2rem;
-    padding-right: 20px;
-}
-
-input[type=checkbox]:checked~.leMenu {
-    display: block;
-}
-
-/*
-body>div {
-    display: block;
-    background-color: antiquewhite;
-    height: 500px;
-    border: 1px solid black;
-}
-*/
-
-/* Marquee (Moving text)*/
-
-.marquee {
-    width: 55%;
-    margin: 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
-    box-sizing: border-box;
-}
-
-.marquee span {
-    display: inline-block;
-    padding-left: 100%;
-    text-indent: 0;
-    animation: marquee 19s linear infinite;
-    font-family: monospace;
-    font-size: 0.8rem;
-    font-weight: 400;
-    letter-spacing: -0.5px;
-}
-
-.marquee span:hover {
-    animation-play-state: paused
-}
-
-@keyframes marquee {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(-100%, 0);
-    }
-}
-
-
-/* MEDIA QUERIES */
-
->>>>>>> robin_branch
 @media screen and (max-width: 940px) {
     header>nav>.marquee {
         width: 100%;
@@ -253,11 +166,7 @@ body>div {
     .leMenu {
         display: none;
     }
-    .labelForMenu{
+    .labelForMenu {
         display: block;
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> robin_branch

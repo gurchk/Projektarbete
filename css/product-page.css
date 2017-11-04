@@ -4,6 +4,7 @@
 }
 body{
   background-color: #f4f4f4;
+
 }
 h1{
   text-transform:uppercase;
@@ -13,31 +14,33 @@ h1{
 
 
 /*Global FLEX OBJECTS*/
+
 .container-1{
   width: 80%;
   margin: auto;
   overflow: hidden;
+  margin-top: 150px;
 
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 }
 .imgbox{
-width:30%;
-padding: 10px;
-border: 1px gray solid;
-}
-.textbox{
-  width: 50%;
+  flex-basis:30%;
   padding: 10px;
   border: 1px gray solid;
-  display: flex;
+}
+.textbox{
+  flex-basis:62%;
+  padding: 10px;
+  border: 1px gray solid;
 
-  flex-wrap: wrap;
+  display: flex;
   flex-direction: column;
+
 }
 .fillbox{
-  width: 10%;
+  flex-basis: 10%;
   padding: 10px;
   border: 1px gray solid;
 }
@@ -45,20 +48,16 @@ border: 1px gray solid;
 
 /*SECTION STRESSED*/
 
-#stressed h1{
-  margin: 100px 0 10px 0;
+#stressed h1, #stressed h3{
   text-align: left;
   font-family: 'Open Sans', sans-serif;
-
 }
 
-#stressed .imgbox img{
-  margin-top: 100px;
+#stressed img{
   width: 100%;
 }
-#stressed p{
-  
-  text-align: justify;
+#stressed ul{
+  text-decoration: none;
   line-height: 1.5;
   width: 100%;
 }

@@ -5,11 +5,14 @@
 body{
   background-color: #f4f4f4;
 }
-
-/*Global*/
 h1{
   text-transform:uppercase;
 }
+
+/*FONTS*/
+
+
+/*Global FLEX OBJECTS*/
 .container-1{
   width: 80%;
   margin: auto;
@@ -17,33 +20,45 @@ h1{
 
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
   justify-content: space-between;
 }
-.slide{
-flex: 1;
-
+.imgbox{
+width:30%;
+padding: 10px;
+border: 1px gray solid;
 }
-
-
-#stressed{
-
-}
-#stressed .slide img{
+.textbox{
+  width: 50%;
   padding: 10px;
-  width: 100%;
-
-}
-#stressed .textbox{
-  padding: 10px
   border: 1px gray solid;
-  flex: 2;
-
   display: flex;
+
   flex-wrap: wrap;
   flex-direction: column;
 }
-#stressed .textbox h1{
-  padding: 10px
+.fillbox{
+  width: 10%;
+  padding: 10px;
+  border: 1px gray solid;
+}
+
+
+/*SECTION STRESSED*/
+
+#stressed h1{
+  margin: 100px 0 10px 0;
   text-align: left;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+#stressed .imgbox img{
+  margin-top: 100px;
+  width: 100%;
+}
+#stressed p{
+  
+  text-align: justify;
+  line-height: 1.5;
+  width: 100%;
 }

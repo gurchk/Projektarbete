@@ -20,6 +20,8 @@ h1{
   margin: auto;
   overflow: hidden;
   margin-top: 150px;
+  border: 1px solid black;
+  border-radius: 20px;
 
   display: flex;
   flex-flow: row wrap;
@@ -29,6 +31,8 @@ h1{
   flex-basis:30%;
   padding: 10px;
   border: 1px gray solid;
+
+
 }
 .textbox{
   flex-basis:62%;
@@ -39,16 +43,12 @@ h1{
   flex-direction: column;
 
 }
-.fillbox{
-  flex-basis: 10%;
-  padding: 10px;
-  border: 1px gray solid;
-}
 
 
 /*SECTION STRESSED*/
 
 #stressed h1, #stressed h3{
+  padding: 10px;
   text-align: left;
   font-family: 'Open Sans', sans-serif;
 }
@@ -57,7 +57,7 @@ h1{
   width: 100%;
 }
 #stressed ul{
-  text-decoration: none;
+  padding: 10px;
   line-height: 1.5;
   width: 100%;
 }

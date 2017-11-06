@@ -1,5 +1,5 @@
 body {
-    background-color: goldenrod;
+    background-color: #f4f4f4;
 }
 main {
     margin-bottom: 150px;
@@ -8,6 +8,8 @@ p
     {
     font-family: 'Kalam', cursive;
 }
+
+
 .arrow-right > h6 {
     margin:2px;
     text-align: center;
@@ -38,19 +40,21 @@ p
     .timeline-content > .arrow-right {
         display: none;
     }
+    .col-xl-12 > .timeline {
+        border-left: 4px solid black;
+    }
 }
 
 .row h1 {
     font-family: 'Kalam', cursive;
     margin-left: 3%;
     position: relative;
-    
     top: 120px;
 }
 
 .timeline {
     position: absolute;
-    top: 13%;
+    top: 14.5%;
     left: 50%;
     border-left: 4px solid red;
     height: 78%;
@@ -99,5 +103,5 @@ p
 
 /* COLOR above the footer */
 .aboveFooter {
-    background-color: #DAA520 !important;
+    background-color: #f4f4f4 !important;
 }

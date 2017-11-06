@@ -127,6 +127,7 @@ section {
     display: block
 }
 
+/*
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -135,8 +136,9 @@ body {
     line-height: 1.5;
     color: #212529;
     text-align: left;
-/*    background-color: #fff*/
+    background-color: #fff
 }
+*/
 
 [tabindex="-1"]:focus {
     outline: 0!important
@@ -243,7 +245,6 @@ a {
 
 a:hover {
     color: #0056b3;
-    text-decoration: underline
 }
 
 a:not([href]):not([tabindex]) {

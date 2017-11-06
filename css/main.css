@@ -146,6 +146,9 @@ footer {
     background-color: #292967;
     position: relative;
 }
+footer .logo {
+    width: 50%;
+}
 
 footer>.flexWrapper {
     display: flex;

@@ -10,7 +10,7 @@ body {
 
 /* Menu / Navigation */
 
-nav {
+header nav {
     background-color: rgba(255, 255, 255, 0.85);
     border: 1px solid #dedede;
     border-radius: 4px;
@@ -28,7 +28,7 @@ nav {
     padding: 0;
 }
 
-nav ul li {
+header nav ul li {
     display: inline-block;
     list-style-type: none;
     -webkit-transition: all 0.2s;
@@ -38,7 +38,7 @@ nav ul li {
     transition: all 0.2s;
 }
 
-nav>ul>li>a {
+header nav>ul>li>a {
     color: dimgrey;
     display: block;
     line-height: 56px;
@@ -49,17 +49,17 @@ nav>ul>li>a {
     text-transform: uppercase;
 }
 
-nav>ul>li:hover {
+header nav>ul>li:hover {
     background-color: rgb( 40, 44, 47);
     padding: 0 10px;
     border-radius: 2.5px;
 }
 
-nav>ul>li:hover>a {
+header nav>ul>li:hover>a {
     color: rgb( 255, 255, 255);
 }
 
-nav>ul>li:hover>a>i {
+header nav>ul>li:hover>a>i {
     color: #3fe61e;
 }
 

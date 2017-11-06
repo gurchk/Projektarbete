@@ -3,6 +3,9 @@ body {
     background-color: #f4f4f4;
 }
 
+p {
+    font-family: monospace !important; 
+}
 main {
     padding-top: 5%;
     width: 80%;
@@ -21,7 +24,7 @@ main {
 }
 
 .us > h1 {
-    font-family: 'Fredoka One', cursive;
+    font-family: monospace, cursive;
     margin-bottom: 0;
 }
 
@@ -73,7 +76,7 @@ main {
 }
 .columns h4 {
     font-style: normal;
-    font-family: 'Fredoka One', cursive;
+    font-family: monospace, cursive;
     font-size: 1.4rem;
 }
 
@@ -82,6 +85,7 @@ main {
     margin-top: -30px;
     padding: 2px;
     margin-bottom: 35px;
+    font-family: monospace;
 }
 a {
     text-decoration: none;
@@ -102,7 +106,7 @@ a:hover {
 }
 
 .contact h1 {
-    font-family: 'Fredoka One', cursive;
+    font-family: monospace, cursive;
 }
 
 input[type=text],

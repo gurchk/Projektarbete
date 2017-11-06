@@ -269,5 +269,8 @@ a{
 
 /*MEDIA QUERY*/
 @media screen and (min-width: 200px) and (max-width: 1000px){
+  .container-1{
+    flex-direction: column;
+  }
 
 }

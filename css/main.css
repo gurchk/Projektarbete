@@ -161,14 +161,14 @@ footer>.flexWrapper {
 footer .license a{
     color: #6d6d6d;
     text-decoration: none;
-    
+
 }
 
 
 footer .license a:hover{
     color: #a0a0a0;
     text-decoration: none;
-    
+
 }
 .flexWrapper>div:first-child {
     text-align: center;

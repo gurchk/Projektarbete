@@ -39,14 +39,8 @@ h4 + h6 {
     }
 }
 
-@media screen and (max-width:1200px) {
-    .timeline-content > .arrow-right {
-        display: none;
-    }
-    .col-xl-12 > .timeline {
-        border-left: 4px solid black;
-    }
-}
+
+
 
 .row h1 {
     font-family: monospace, cursive;
@@ -71,7 +65,11 @@ h4 + h6 {
     margin: 20px 20px;
     background-color: #a58855;
     z-index: -1;
-    box-shadow: 10px 5px 5px black;
+    box-shadow: 10px 10px 5px black;
+}
+
+.offset-xl-6 .timeline-content {
+    box-shadow: -10px 10px 5px black;
 }
 
 .arrow-right {
@@ -82,11 +80,12 @@ h4 + h6 {
     width: 65px;
     height: 40px;
     text-align: center;
-    box-shadow: 10px 5px 5px black;
+    box-shadow: 10px 10px 5px black;
 }
 
 .offset-xl-6 .arrow-right {
     left: -11.8%;
+    box-shadow: -10px 10px 5px black;
 }
 
 .timehold-right .timeline-year {
@@ -94,6 +93,20 @@ h4 + h6 {
     top: 13%;
 }
 
+@media screen and (max-width:1200px) {
+    .timeline-content > .arrow-right {
+        display: none;
+    }
+    .col-xl-12 > .timeline {
+        border-left: 4px solid black;
+    }
+    .offset-xl-6 .arrow-right {
+        box-shadow: 10px 10px 5px black;
+    }
+    .offset-xl-6 .timeline-content {
+        box-shadow: 10px 10px 5px black;
+    }
+}
 
 .gradient {
     background-image: linear-gradient( to right,

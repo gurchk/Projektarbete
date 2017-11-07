@@ -11,7 +11,7 @@ p {
     font-family: monospace;
 }
 
-.col-sm-12 h4 {
+.col-xl-12 h4 {
     font-family: monospace;
     font-weight: 700;
 }
@@ -20,6 +20,7 @@ p {
     font-family: monospace;
     font-weight: 700;
 }
+
 
 .arrow-right > h6 {
     margin: 4px;
@@ -40,7 +41,7 @@ h4 + h6 {
 }
 
 .row h1 {
-    font-family: monospace, cursive;
+    font-family: monospace;
     margin-left: 3%;
     position: relative;
     top: 120px;
@@ -51,9 +52,21 @@ h4 + h6 {
     top: 14rem;
     left: 50%;
     border-left: 4px solid red;
-    height: 77%;
+/*    height: 77%;*/
     z-index: -1;
 }
+
+@media screen and (min-height:100px) and (max-height:699px) {
+    .timeline {
+        height: 76%;
+    }
+}
+@media screen and (min-height:700px)  {
+    .timeline {
+        height: 75%;
+    }
+}
+
 
 
 .timeline-content {
@@ -71,7 +84,7 @@ h4 + h6 {
 
 .arrow-right {
     position: absolute;
-    left: 100%;
+
     top: 2rem;
     background-color: #a58855;
     width: 4.5rem;
@@ -79,9 +92,12 @@ h4 + h6 {
     text-align: center;
     box-shadow: 10px 10px 5px black;
 }
+.right {
+    left: 100%;    
+}
 
 .offset-xl-6 .arrow-right {
-    left: -11.8%;
+    right: 100%;
     box-shadow: -10px 10px 5px black;
 }
 
@@ -90,7 +106,7 @@ h4 + h6 {
     top: 13%;
 }
 
-@media screen and (max-width:1200px) {
+@media all and (max-width:1200px) {
     .timeline-content > .arrow-right {
         display: none;
     }
@@ -121,11 +137,4 @@ h4 + h6 {
     background-color: #f4f4f4 !important;
 }
 
-@media (min-width:1400px) and (max-width:5464px) {
-    .arrow-right {
-        display: none;
-    }
-    .timeline {
-        display: none;
-    }
-}
+

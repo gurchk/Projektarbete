@@ -26,15 +26,19 @@ h2 {
   padding: 5px 0;
 }
 
-h3 {
+h3{
   font-weight: bold;
   font-size: 1.3rem;
-  padding: 20px 0 10px 0;
+  margin: 0;
+  padding: 5px 0 5px 0;
+}
+.h3-color{
+  color:green;
 }
 
 p {
   font-size: 1.1rem;
-  line-height: 1.6rem;
+  line-height: 1.7rem;
 }
 
 a {
@@ -132,8 +136,31 @@ a {
 }
 
 /*MODAL Content*/
-
 #showcase-modal-1 {
+  width: 100%;
+  height: 25vh;
+  border-radius: 10px 10px 0 0;
+  background-image: url(../img/scent-sticks-small.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#showcase-modal-2 {
+  width: 100%;
+  height: 25vh;
+  border-radius: 10px 10px 0 0;
+  background-image: url(../img/health-small.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#showcase-modal-3 {
+  width: 100%;
+  height: 25vh;
+  border-radius: 10px 10px 0 0;
+  background-image: url(../img/revange-small.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#showcase-modal-4 {
   width: 100%;
   height: 25vh;
   border-radius: 10px 10px 0 0;
@@ -141,21 +168,27 @@ a {
   background-size: cover;
   background-position: center;
 }
-
 .modal-textbox {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/*MODEL BASE*/
-
 .modal-textbox p {
   text-align: center;
   width: 60%;
-  min-width: 320px;
   padding: 10px;
   margin: auto;
+}
+
+/*MODAL BASE*/
+/* To prevent link jumping when opening make modal id position fixed and z-index above all content*/
+#stress,
+#healthy,
+#revange,
+#adventure{
+  position: fixed;
+  z-index: 2;
 }
 
 .modal-container-1,
@@ -166,7 +199,7 @@ a {
   background-color: #fff;
   color: black;
   left: 50%;
-  width: 80%;
+  width: 70%;
   /*min-width: 500px;*/
   /*height: 80vh;*/
   /*max-height: 800px;*/
@@ -285,7 +318,7 @@ a {
 
 @media all and (max-width: 940px){
   .container-1,
-  .container-2 {
+  .container-2{
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -298,11 +331,18 @@ a {
   }
   .item-container-1 {
     width: 50%;
-
+    align-self: center;
     margin: 30px 0;
     box-shadow: 10px 15px 20px #C7C7C7;
   }
-  div#stress{
+/*  #stress,
+  #healthy,
+  #revange,
+  #adventure{
+    position: fixed;
+    z-index: 2;
+  }*/
+  /*div#stress{
     position: absolute;
     top: 50px;
   }
@@ -317,14 +357,16 @@ a {
   div#adventure{
     position: absolute;
     top: 3000px;
-  }
+  }*/
   .modal-container-1,
   .modal-container-2,
   .modal-container-3,
   .modal-container-4{
     width: 100%;
-
-
+}
+.modal-textbox p {
+  width: 98%;
+  padding: 10px;
 }
 
 @media all and (max-width: 1078px) {
@@ -334,4 +376,10 @@ a {
   .modal-container-4{
     width: 100%;
   }
+  .modal-textbox p {
+    width: 98%;
+    padding: 10px;
+
+  }
+
 }

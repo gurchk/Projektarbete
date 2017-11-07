@@ -1,11 +1,15 @@
-* {
+/*    Added below  .footer / .hr-footer */
+* :not(.footer, .hr-footer) {
   margin: 0;
   padding: 0;
 }
 
+
+
 body {
   background-color: #f4f4f4;
-  font-family: 'Open Sans', sans-serif;
+    /*    Added below   monospace */
+  font-family: monospace, sans-serif;
 }
 
 h1 {
@@ -98,6 +102,7 @@ a {
   background-color: gold;
   border-radius: 0 0 15px 15px;
   text-align: center;
+
 }
 
 .textbox-2 {

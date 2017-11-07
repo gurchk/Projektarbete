@@ -140,11 +140,15 @@ input[type=checkbox]:checked~.leMenu {
     position: relative;
     height: 150px;
     background-color: #F4F4F4;
+/*    Added below   */
+    z-index: -1;
 }
 
 footer {
     background-color: #292967;
     position: relative;
+/*    Added below   */
+    z-index: -1;
 }
 footer .logo {
     width: 50%;
@@ -161,6 +165,8 @@ footer>.flexWrapper {
 footer .license a{
     color: #6d6d6d;
     text-decoration: none;
+/*    Added below   */
+    font-family: monospace;
 
 }
 
@@ -168,6 +174,8 @@ footer .license a{
 footer .license a:hover{
     color: #a0a0a0;
     text-decoration: none;
+/*    Added below   */
+    font-family: monospace;
 
 }
 .flexWrapper>div:first-child {

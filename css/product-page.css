@@ -185,7 +185,7 @@ a {
 /* To prevent link jumping when opening make modal id position fixed and z-index above all content*/
 #stress,
 #healthy,
-#revange,
+#revenge,
 #adventure{
   position: fixed;
   z-index: 2;
@@ -342,33 +342,18 @@ a {
     position: fixed;
     z-index: 2;
   }*/
-  /*div#stress{
-    position: absolute;
-    top: 50px;
-  }
-  div#healthy{
-    position: absolute;
-    top:600px;
-  }
-  div#revange{
-    position: absolute;
-    top: 1200px;
-  }
-  div#adventure{
-    position: absolute;
-    top: 3000px;
-  }*/
+
   .modal-container-1,
   .modal-container-2,
   .modal-container-3,
   .modal-container-4{
     width: 100%;
+ }
+ .modal-textbox p {
+   width: 95%;
+   padding: 10px;
+ }
 }
-.modal-textbox p {
-  width: 98%;
-  padding: 10px;
-}
-
 @media all and (max-width: 1078px) {
   .modal-container-1,
   .modal-container-2,
@@ -377,7 +362,7 @@ a {
     width: 100%;
   }
   .modal-textbox p {
-    width: 98%;
+    width: 95%;
     padding: 10px;
 
   }

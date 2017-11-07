@@ -3,6 +3,9 @@ header {
     background-size: cover;
     height: 100vh;
 }
+header>a{
+  display: block;
+}
 header h1 {
     text-align: center;
     position: relative;
@@ -23,7 +26,7 @@ header h2 {
     letter-spacing: 2px;
     font-size: 1.7rem;
 }
-header>p {
+header>a p {
     text-align: center;
     position: relative;
     top: 45vh;
@@ -34,7 +37,7 @@ header>p {
     font-size: 1.6rem;
     font-style: italic;
 }
-header>img{
+header img{
   width: 10%;
   text-align: center;
   position: relative;

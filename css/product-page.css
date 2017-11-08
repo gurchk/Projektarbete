@@ -12,7 +12,7 @@ body {
   font-family: monospace, sans-serif;
 }
 
-h1 {
+#products h1 {
   text-transform: uppercase;
   line-height: 1.5rem;
   font-size: 1.2rem;
@@ -44,6 +44,7 @@ p {
 a {
   text-decoration: none;
   display: inline-block;
+  color: black;
 }
 
 /*FLEX OBJECTS*/
@@ -315,7 +316,20 @@ a {
 }
 
 /*MEDIA QUERY*/
+@media all and (max-width: 1078px) {
+  .modal-container-1,
+  .modal-container-2,
+  .modal-container-3,
+  .modal-container-4{
+    width: 100%;
+  }
+  .modal-textbox p {
+    width: 95%;
+    padding: 10px;
 
+  }
+
+}
 @media all and (max-width: 940px){
   .container-1,
   .container-2{
@@ -330,7 +344,7 @@ a {
     padding-top:0;
   }
   .item-container-1 {
-    width: 50%;
+    width: 80%;
     align-self: center;
     margin: 30px 0;
     box-shadow: 10px 15px 20px #C7C7C7;
@@ -353,18 +367,4 @@ a {
    width: 95%;
    padding: 10px;
  }
-}
-@media all and (max-width: 1078px) {
-  .modal-container-1,
-  .modal-container-2,
-  .modal-container-3,
-  .modal-container-4{
-    width: 100%;
-  }
-  .modal-textbox p {
-    width: 95%;
-    padding: 10px;
-
-  }
-
 }
